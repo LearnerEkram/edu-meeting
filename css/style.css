@@ -1,0 +1,667 @@
+/* heading style manage */
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    font-family:arial;
+}
+#header-section {
+    width: 100%;
+    height:100%;
+}
+
+.video-section {
+    /* position: relative; */
+    min-width: 100%;
+    min-height: 100vh;
+    max-width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+.over-ly {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgb(3 3 3 / 60%);
+    width: 100%;
+    /* height: 720px; */
+}
+
+.header-top {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header-top-info {
+    height: 40px;
+    background: #111;
+    color: #fff;
+    padding: 7px;
+}
+
+.header-details {
+    /* margin: 0 10%; */
+    position: relative;
+}
+
+.header-top-info div {
+    margin: 0 10%;
+}
+
+
+.header-body {
+    margin: 200px 10%;
+    /* padding: 100% 10%; */
+}
+
+nav#nav-section {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    border-bottom: 1px solid #ccc;
+    background: rgba(250,250,250, .8);
+    z-index: 9999;
+    height: auto;
+    color: #111;
+}
+#nav-section-list li a{
+    color:#111; 
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-left: 0px;
+ } 
+.logo{
+    min-width: 224px;
+    display: inline;
+    font-size: 2rem;
+    font-weight: 700;
+}
+ul#nav-section-list {
+    margin-left: 350px;
+    margin-top: 10px
+}
+h2.semi-title {
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+h1.bold-title {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 39px;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+
+p.body-para {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.body-info {
+    margin-right: 41%;
+    /* margin-left: 10%; */
+    margin-bottom: 200px;
+}
+.body-info button {
+    padding: 10px 30px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    background: #ee0e15;
+    border: none;
+    border-radius: 29px;
+    text-transform: capitalize;
+}
+.right-icon i {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+nav#nav-section .nabvar-brand {
+    text-transform: uppercase;
+    margin-top: 16px;
+}
+
+/* owl carousel section design start from here  */
+.owl-details{
+    padding-top: 30px;
+}
+/* .car{
+    background-image: url(../images/video-item-bg.jpg);
+}*/
+.cards{
+    text-align: center;
+    padding: 20px;
+    background-image:  url(../images/service-item-bg.jpg);
+    color: #fff;
+    border-radius: 20px;
+    min-width: 100%;
+    min-height: 290px;
+    max-height: 100%;
+    max-height: 280px;
+    object-fit: cover;
+    z-index: -9;
+    color: #fff;
+
+}
+/* .img-overly{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: red;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .3;
+} */
+.cards .card-img img{
+    width:50px;
+    height: 50px;
+   margin: 20px auto;
+}
+.card-content h3{
+   font-weight: 800;
+   font-size: 18px;
+   text-transform: capitalize; 
+}
+.card-para{
+    margin: 10px 4%;
+    padding-bottom: 20px;
+}
+
+/* upcoming section design start form here  */
+.owlCarousel-section{
+    background-image: url(../images/meetings-bg.jpg);
+    object-fit: cover;
+}
+.upcoming-section{
+    background-image: url(../images/meetings-bg.jpg);
+    color: #fff;
+    padding: 65px 0px;
+}
+.horizon{
+    color: #fff;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+.upcoming-head .upcome-title{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+   
+}
+
+/* upcoming section design start form here  */
+.catgories{
+    border: 2px solid black;
+    background: #fff;
+    color: #111;
+    padding: 15px;
+    border-radius: 25px;
+    margin: 20px 0px;
+}
+.catgories .catgories-title{
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 30px 0px;
+}
+.catgories-horizon{
+    margin-bottom: 15px;
+    /* width: 400px; */
+}
+.catgories-list{
+    list-style-type: none;
+    padding: 0px;
+}
+.catgories-list li{
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0px;
+    text-align: left;
+    line-height: 2rem;
+}
+.catgories-btn{
+   background: crimson;
+   color: #fff;
+   max-width: 400px;
+   width:  100%;
+   display: inline-block;
+   padding: 12px 25px;
+   text-align: center;
+   border-radius: 18px;
+   text-decoration: none;
+   text-transform: capitalize;
+   margin: 20px 0px;
+}
+
+/* upcoming section design start from here  */
+.upcoming-card {
+    margin-bottom: 20px;
+    width: 103%;
+    height:  100%;
+    position: relative;
+    margin: 10px 0px;
+}
+
+.card-head h2 {
+    position:  absolute;
+    top: 10px;
+    left: 15px;
+    background: #fff;
+    color: #111;
+    font-size: 21px;
+    padding: 5px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.card-info {
+    background: #fff;
+    border-radius: 20px;
+    color: #111;
+}
+.card-head img {
+    width: 100%;
+    border-radius: 15px  15px 0 0;
+}
+.card-body .left {
+    margin: 3px 30px 0px 0px;
+}
+
+.card-body.right {
+    margin: 20px 0px 0px 30px;
+}
+
+.card-body .right .right-head {
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.card-body .right p {
+    margin: 0;
+    font-weight: 500;
+}
+.card-body .left p:first-child{
+    color:crimson;
+}
+
+.card-body .left p {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* appling section design start from here  */
+
+/* .fixed-bg{
+    z-index: 1;
+    background-image: url(../images/apply-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover ;
+    background-position: center center;
+    min-width: 100%;
+    min-height: 100vh;
+    max-width:100%;
+    max-height: 100vh;
+    position: relative;
+
+} */
+.apply-section{
+    background-image: url(../images/apply-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover ;
+    background-position: center center;
+    /* position: absolute; */
+    padding: 144px 0;
+    /* top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    margin: 40px 0px; */
+}
+/* degree section design  start  here  */
+.appling-content .degree,.master {
+    background: rgba(250, 250, 250, .2);
+    color: #fff;
+    padding: 50px 36px;
+    margin-top: 20px;
+}
+.content h1 {
+    font-size: 31px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6rem;
+}
+
+.content a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 11px 38px;
+    border-radius: 15px;
+}
+.degree a{
+    background: crimson;
+}
+.master a{
+    background: #E59C2B;
+}
+#accordion-section{
+    margin: 30px 0px;
+    border-radius: 40px;
+} 
+button {
+    padding: 30px;
+}
+
+button.accordion-button {
+    padding: 34px 20px;
+}
+
+.accordion-item p {
+    padding: 20px;
+}
+/* course section start from here  */
+#courses-section{
+    background-image: url(../images/meetings-page-bg.jpg);
+    color: #fff;
+    padding: 140px 0px;
+}
+.course-header h2 {
+    text-transform: capitalize;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 26px;
+}
+
+
+
+div#carousel-body img {
+    border: none;
+}
+
+div#carousel-body {
+    color: #111;
+    text-align: center;
+}
+
+#carousel-body .card{
+    width:95%;
+}
+.card-body p {
+    font-size: 21px;
+}
+
+.card-fotter .fotter-icon i {
+    color: #F5A425;
+    /* margin-left: 1px; */
+}
+
+.fotter-icon {
+    margin-left: 30px;
+}
+
+.fotter-rate p {
+    margin-right: 30px;
+    color: #2b1112;
+    font-weight: 700;
+}
+
+/* about us section design start form here  */
+.about-section {
+    background-image: url(../images/facts-bg.jpg);
+    background-attachment: fixed;
+    background-size: center center;
+    background-position: cover;
+    color: #fff;
+}
+
+.about-header {
+    margin: 100px 0px;
+}
+
+.about-header h1 {
+    font-size: 49px;
+    font-weight: 700;
+}
+
+.about-count {
+    background: rgba(250, 250, 250, .2);
+    text-align: center;
+    padding: 20px 55px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+.about-count p {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.about-count h1 {
+    color: #F5A42E;
+    font-weight: 700;
+}
+a img {
+    border-radius: 25px;
+    margin-top: 10rem;
+    /* position: relative; */
+}
+
+a {
+    position: relative;
+}
+
+a img:last-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30px, -65px);
+}
+
+/* fotter section design strt from here  */
+
+#footer-section{
+    background: url(../images/meetings-bg.jpg);
+    background-size: cover;
+    color: #fff;
+}
+.footer-form {
+    margin: 15% 0;
+    background: rgba(250,250,250,1);
+    color: #111;
+    padding: 50px 20px;
+    border-radius: 20px;
+}
+
+.form-haed h2 {
+    font-size: 29px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+form input {
+    width: 229px;
+    height: 76px;
+    border: none;
+    margin: 20px 0px;
+}
+
+textarea {
+    width: 100%;
+    height: 149px;
+    border: none;
+}
+
+.footer-btn {
+    width: 16rem;
+    height: 58px;
+    padding: 5px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    background: #A12C2F;
+    color: #fff;
+}
+.footer-address {
+    background: #A12C2F;
+    padding: 20px;
+    line-height: 2rem;
+    /* font-size: 20px; */
+    margin-top: 10rem;
+}
+
+.b-bottom {
+    width: 100px;
+    height: 1px;
+    background: #fff;
+}
+.footer-address .text {
+    font-weight: 800;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+.footer-address div p:last-child {
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 0px;
+}
+
+.footer-address div {
+    line-height: 2.5rem;
+}
+.bottom-footer {
+    padding: 100px 32%;
+}
+
+.footer-description {
+    line-height: 2rem;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* media quary has been started from here  */
+
+@media only screen and (max-width: 575px) {
+    .logo{
+        font-size: 1rem;
+ 
+    }
+    .body-info h1{
+        font-size: 1.7rem;
+    }
+    .body-para{
+        line-height: 1.4rem;
+    }
+    
+     ul#nav-section-list {
+         margin-left: 18%;
+     } 
+   
+} 
+
+
+@media only screen and (max-width: 991px) {
+   /* .logo{
+       font-size: 1.5rem;
+
+   }
+   
+    ul#nav-section-list {
+        text-align: end;
+    }  */
+    ul{
+        text-align: center;
+    }
+   .header-top-info .left-desc{
+       display: none;
+   }
+   .header-body{
+       margin: 100px 10%;
+   }
+   .body-info {
+    margin-right: 18%;
+    /* margin-left: 10%; */
+    margin-bottom: 9px;
+    margin-top: 0;
+   }
+   h1.bold-title {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 9px;
+    font-weight: 900;
+}
+p.body-para {
+    color: #fff;
+    margin-bottom: 8px;
+    font-size: 17px;
+    opacity: .8
+}
+.body-info button {
+    padding: 5px 20px;
+    font-size: 15px;
+}
+.bottom-footer {
+    padding: 21px 10%;
+}
+
+
+} 
+
+
+@media only screen and (min-width: 992px) {
+        .logo{
+            font-size: 2rem;
+     
+        }
+        h1.bold-title {
+            text-transform: uppercase;
+            color: #fff;
+            font-size:2.5rem;
+            margin-bottom: 9px;
+            font-weight: 900;
+        }
+        
+         ul#nav-section-list {
+             margin-left: 18%;
+         } 
+} 
+     
+@media only screen and (min-width: 1200px) {
+        .logo{
+            font-size: 2rem;
+     
+        }
+        
+         ul#nav-section-list {
+             margin-left: 30%;
+         } 
+       
+} 
+     
+
